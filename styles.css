@@ -5,9 +5,48 @@
     
 }
 
+/*Error site*/
+#baggrundsbilledeerror{
+    background-image: url('images/nippon404.png'); 
+    min-height: 120vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#errortekst{
+    text-align: center;
+    line-height: 50px;
+    width: 60%;
+    padding-left: 30%;
+}
+#errortekst h1{
+    font-size: 50px;
+    color:rgba(255, 35, 35, 1);
+    line-height: 60px;
+    letter-spacing: 2px;
+}
+#errortekst h2{
+    padding-top: 2%;
+    font-size: 30px;
+    color:rgba(255, 35, 35, 1);
+    text-transform: none;
+    letter-spacing: 2px;
+}
+#errortekst p{
+    font-size:large;
+    color:rgba(28, 38, 102, 1);
+    padding-bottom: 2%;
+}
+
 .large-checkbox {
   transform: scale(2); 
-  margin-top: 10px;/* Ændrer størrelsen ved at skalaen op med faktor 2 (kan tilpasses) */
+  margin-top: 10px;
 }
 
 /* headeren */
