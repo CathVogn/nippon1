@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nippon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https: //fonts.googleapis.com/css2? family= Barlow+Semi+Condensed & display=swap" rel="stylesheet">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/e55ea91b63.js" crossorigin="anonymous"></script>
+    <header>
+        <div class="logo"><a href="index.html"><img alt="logo" src="img/logo.png" width="180px"></a></div>
+        <div class="ikonburger">
+    <i class="fa fa-bars" id="burger-menu"></i>
+    <i class="fa-solid fa-cart-shopping" style="color: #001e57;"></i>
+        </div>
+    <div class="linje"></div>
+    <nav>
+
+        <!-- burger -->
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <div class="burger-item"><a href="login.html"><i class="fa-solid fa-user"></i></a></div>
+            <div id="linje3"></div>
+            <div id="burger-text">
+            <a href="maaltidskasser.html">Måltidskasser</a>
+            <a href="madpakkekasser.html">Madpakkekasser</a></div>
+            <div id="linje3"></div>
+            <div id="burger-text">
+                <h3>Om os:</h3>
+            <a href="#">Ansvarlighed</a>
+            <a href="#">Download app</a>
+            <a href="#">Job Nippon</a>
+            <a href="#">FAQ</a>
+            <a href="#">Fortrydelsesret</a></div>
+
+            <!-- Almindelige links -->
+            <ul class="right-links">
+                
+                <a href="login.html"><i class="fa-solid fa-user"></i><li>Login</li></a>
+                <a href="error.html"><i class="fa-solid fa-cart-shopping" style="color: #001e57;"></i></a>
+                
+            </ul>
+            <!-- Top links -->
+            <ul class="top-links">
+                <a href="maaltidskasser.html">Måltidskasser</a>
+                <div class="vertical-line"></div>
+                <a href="madpakkekasser.html">Madkasser</a>
+            </ul>
+        </div>
+    </nav>
+    
+<!-- Countdown -->
+    <div class="alert-container">
+        <img src="img/leveringikon.png" alt="levering" width="100px" height="90px">
+        <div class="copy-container">
+            <h1 class="main-head">Gå ikke glip af op til 1.199kr i rabat!</h1>
+        </div>
+        <ul class="countdown-clock">
+            <li><span id="days"></span>D</li>
+            <li><span id="hours"></span>T</li>
+            <li><span id="minutes"></span>M</li>
+            <li><span id="seconds"></span>S</li>
+        </ul>
+        <div class="nav-button-container">
+            <a class="nav-button-wrap" href="error.html">
+                <div id="nav-button">Se Tilbud</div>
+            </a>
+        </div>
+    </div>
+                
+                
+    </header>
+<div class="sticky-header-spacer"></div>
+
+     <!-- Slideshow -->
+<div class="slideshow-container fade">
+
+    <!-- Billeder og tekst -->
+    <div class="Containers">
+        <a href="maaltidskasser.html"><img src="img/Slide1medtekst.jpg" alt="slide" width="100%" height="700px"></a>
+      <a href="maaltidskasser.html"><button class="image-button">Se Måltidskasser</button></a>
+    </div>
+  
+    <div class="Containers">
+        <a href="madpakkekasser.html"><img alt="madkasser" src="img/slide2.jpg" alt="slide" width="100%" height="700px"></a>
+      <a href="madpakkekasser.html"><button class="image-button2">Se Madpakkekasser</button></a>
+    </div>
+  
+    <div class="Containers">
+        <a href="error.html"><img src="img/slide3.jpg" alt="slide" width="100%" height="700px"></a>
+      <a href="error.html"><button class="image-button3">SE NIPPONS FAVORITTER</button></a>
+    </div>
+
+    <div style="text-align:center">
+    <span class="dots" onclick="currentSlide(1)"></span>
+    <span class="dots" onclick="currentSlide(2)"></span>
+    <span class="dots" onclick="currentSlide(3)"></span>
+  </div>
+  
+    <!-- frem og tilbage knapper -->
+    <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+  
+</div>
+
+<!-- ikoner på stribe -->
+<div class="ikoner-container">
+    <div class="ikoner-billeder">
+        <img src="img/vælgikon.png" alt="Billede 1">
+    </div>
+    <div class="ikoner-billeder">
+        <img src="img/bygikon.png" alt="Billede 2">
+        
+    </div>
+    <div class="ikoner-billeder">
+        <img src="img/leveringikon.png" alt="Billede 3">
+        
+    </div>
+    <div class="ikoner-billeder">
+        <img src="img/tilberedikon.png" alt="Billede 4">
+        
+    </div>
+    <div class="ikoner-billeder">
+        <img src="img/spisikon.png" alt="Billede 5">
+    </div>
+</div>
+
+    <div class="ikoner-text">
+        <h3>VÆLG</h3>
+        <h3>BYG</h3>
+        <h3>LEVERING</h3>
+        <h3>TILBERED</h3>
+        <h3>SPIS</h3>
+    </div>
+
+    <!-- Lær Nippon -->
+
+    <div class="lærnippon-omkreds">
+   
+        <div class="lærnipponcontainer">
+            
+            <div class="lærnipponbillede">
+                <img src="img/NipponIkon.png" alt="Stort billede" id="nippon-bilde">
+            
+            </div>
+             <h1>Lær sammen med Nippon hvordan man laver nem og lækker japansk mad derhjemme</h1>  
+
+            <div class="lærnippon-sectioner">
+               
+                <div class="lærnippon-section">
+                    <h2>Spar tid og få mere overskud</h2>
+                    <p>Med Nippon måltidskasser skal du ikke bruge tid på at finde på aftensmaden hver uge og kan også spare tiden på indkøb, så du har tid til det der betyder noget</p>
+                </div>
+                <div class="lærnippon-section">
+                    <h2>Varieret kost i en travl hverdag</h2>
+                    <p>Med en travl hverdag kan det være svært at få tid til at finde på forskellige retter hver uge. Med Nippon slipper du for besværet med det og sikrer dig en varieret kost.</p>
+                </div>
+                <div class="lærnippon-section">
+                    <h2>Lær at lave nye japanske retter</h2>
+                    <p>Sørg for at I i jeres familie også spiser nogle mere kulturelle middagsretter og lærerer på en nem måde japanske favoritter</p>
+                </div>
+                <div class="lærnippon-section">
+                    <h2>Inddrag børnene i madlavningen</h2>
+                    <p>Nippon laver opskrifter og madpakker i børnehøjde, så du nemmere kan inddrage børnene i madlavningen i hverdagen</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--Oversigt over Nippons måltidskasser-->
+<img id="overskriftmaal" src="img/overskriftmaaltid.png" alt="Overskrift over de fire måltidskasser">
+<div class="rakkeaffire">
+    <section class="prmaal">
+        <a href="error.html"><img src="img/nipponsushi-2.png" alt="ikon"></a>
+        <h1>FAVORITTER</h1>
+    </section>
+    <section class="prmaal">
+        <a href="vegansk.html"><img src="img/nippontofu-3.png" alt="ikon"></a>
+        <h1>VEGANSK</h1>
+    </section>
+    <section class="prmaal">
+        <a href="error.html"><img src="img/nipponbroccoli-2.png" alt="ikon"></a>
+        <h1>MEST GRØNT</h1>
+    </section>
+    <section class="prmaal">
+        <a href="error.html"><img src="img/nipponbøf-2.png" alt="ikon"></a>
+        <h1>PREMIUM</h1>
+        </section>
+</div>
+<section id="plads"></section>
+
+<!--Den skræddersyet måltidskasse-->
+<section id="infoto">
+    <div class="infoimgto">
+        <img src="img/nippondumpling.png" alt="Billede af appen">
+    </div>
+    <section class="infotekstto">
+        <h1>SKRÆDDERSY DIN MÅLTIDSKASSE</h1>
+        <section class="ikontekstto">
+            <p>Hos Nippon har du også mulighed for at tilpasse din helt egen måltidskasse med alle opkrifterne for ugen. Så kan du altid få lige præcis de retter du aller helst vil have</p>
+        </section>
+            <a class="videre" href="skaddersy.html">Se Opskrifterne</a>
+    </section>
+</section>
+
+<section id="plads"></section>
+
+<!--Info om indhold i kasserne-->
+
+<section class="infotre">
+        <img src="img/maallogo.png" alt="Billede af appen">
+    <section class="infoteksttre">
+        <h1>HVAD ER I KASSEN?</h1>
+        <section class="ikonteksttre">
+            <ul>
+                <li>Opskriftsvejledning</li>
+                <li>Alle ingredienser til dine måltider</li>
+                <li>En sjov madlavningsoplevelse til hele familien</li>
+                <li>Indpakning der nemt kan være  i køleskabet</li>
+            </ul>
+        </section>
+        <a href="error.html"><button class="bestilkasse">Gør som andre og bestil din kasse nu</button></a>
+    </section>
+</section>
+
+  <!--Trustpilot oversigt m. anmeldelser-->
+  <section id="trust">
+    <section id="trustimg">
+        <img src="img/trustlogo.png" alt="stjerner trustpilot">
+        <h2>Ekstraordinær</h2>
+    </section>
+    <section class="trusttekst">
+        <img src="img/ministartstrust.png" alt="ministjerner trustpilot">
+        <h3>Helt fantastisk!</h3>
+        <h4>"Gør min hverdag utroligt meget nemmere! Tak for dette fantastiske koncept!"</h4>
+    </section>
+    <section class="trusttekst">
+        <img src="img/ministartstrust.png" alt="ministjerner trustpilot">
+        <h3>Velsmagende</h3>
+        <h4>"Modtager i øjeblikket den veganske kasse, dejligt med velsmagende mad."</h4>
+    </section>
+    <section class="trusttekst">
+        <img src="img/ministartstrust.png" alt="ministjerner trustpilot">
+        <h3>Lækkert</h3>
+        <h4>"Virkelig lækkert, friske råvarer og nemt at gå til!"</h4>
+    </section>
+    <section class="trusttekst">
+        <img src="img/ministartstrust.png" alt="ministjerner trustpilot">
+        <h3>Fine fødevarer</h3>
+        <h4>"Fine fødevarer, gode, sunde og instruktive opskrifter med stabil levering"</h4>
+    </section>
+</section>
+
+<!--nye opskrifter-->
+<h1 id="galleriover">NYE OPSKRIFTER I DENNE UGE</h1>
+        <section id="billed">
+            <p id="karrusel"></p>
+            <img id="venstrePil" src="img/pilvenstre.png" alt="Venstre Pil">
+            <img id="billed1" class="skiftBillede" src="img/vegansk.png" alt="Vegansk ret">
+            <img id="billed2" class="skiftBillede" src="img/premium.png" alt="Premium ret">
+            <img id="billed3" class="skiftBillede" src="img/meregroent.png" alt="Mere grøn ret">
+            <img id="billed4" class="skiftBillede" src="img/indbagtkylling.png" alt="Simpel ret">
+            <img id="hoejrePil" src="img/pilhoejre.png" alt="Højre pil"> 
+        </section>
+
+<!--Info om app-->
+<section id="info">
+    <img class="infoimga" src="img/app.png" alt="Billede af appen">
+    <section class="infotekst">
+        <h1>Gør madlavningen til en leg <br> med Nippon app’en</h1>
+        <div class="linje5">
+            <div class="icon-container">
+                <img src="img/phone.png" alt="telefon ikon" width="50%">
+                <h2>Lige ved hånden altid</h2>
+            </div>
+            <div class="icon-container">
+                <img src="img/leveringsikon.png" alt="leverings ikon" width="60%">
+                <h2>Ændre levering - og tidspunkt</h2>
+            </div>
+        </div>        
+    </section>
+    </section>
+
+
+<footer>
+<div class="linje1"></div>
+<section class="baggrundsfarve">
+    <section class="footer-container">
+        <section class="folink">
+            <h3>Om os:</h3>
+            <a href="#">Ansvarlighed</a>
+            <a href="#">Download app</a>
+            <a href="#">Job Nippon</a>
+            <a href="#">FAQ</a>
+            <a href="#">Fortrydelsesret</a>
+        </section>
+        <section class="folink">
+            <img id="foimg" src="img/logofooter.png" alt="Nippon logo">
+        </section>
+        <section class="folink">
+            <h3>Kontakt:</h3>
+            <a href="#">Kirkeallé 115</a>
+            <a href="#">8000 Aarhus</a>
+            <a href="#">CVR 33070890</a>
+            <a href="#">+45 79791010</a>
+            <a href="#">kontakt@nippon.dk</a>
+        </section>
+    </section>
+
+    <section class="footer-info">
+        <div class="input-container">
+            <input type="text" id="indsetmail" placeholder="Indtast mail her" value="">
+        </div>
+        <div class="billedrakke">
+            <img src="img/mobilepay.png" alt="mobilepay">
+            <img src="img/dk.png" alt="dk">
+            <img src="img/visa.png" alt="visa">
+            <img src="img/matercard.png" alt="mastercard">
+        </div>
+    </section>
+    </section>
+
+  
+<!--Øverste footer-->
+<section id="fotop">
+    <section id="fotrust">
+        <img src="img/smiley.png" alt="fødevarestyrelsen">
+        <img src="img/ovrefooter.png" alt="trustpilot stjerner">
+        <img src="img/emaerket.png" alt="emærket logo">
+    </section>
+</section>
+
+<section id="fobund">
+    <h2>Følg os og blev inspireret</h2>
+        <img src="img/instagram.png" alt="instagram logo">
+        <img src="img/pinterest.png" alt="pinterest logo">
+        <img src="img/facebook.png" alt="facebook logo">
+</section>
+</footer>
+</body>
+</html>

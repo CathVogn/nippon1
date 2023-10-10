@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nippon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https: //fonts.googleapis.com/css2? family= Barlow+Semi+Condensed & display=swap" rel="stylesheet">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/e55ea91b63.js" crossorigin="anonymous"></script>
+    <header>
+        <div class="logo"><a href="index.html"><img alt="logo" src="img/logo.png" width="180px"></a></div>
+        <div class="ikonburger">
+    <i class="fa fa-bars" id="burger-menu"></i>
+    <i class="fa-solid fa-cart-shopping" style="color: #001e57;"></i>
+        </div>
+    <div class="linje"></div>
+    <nav>
+
+        <!-- burger -->
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <div class="burger-item"><a href="login.html"><i class="fa-solid fa-user"></i></a></div>
+            <div id="linje3"></div>
+            <div id="burger-text">
+            <a href="maaltidskasser.html">Måltidskasser</a>
+            <a href="madpakkekasser.html">Madpakkekasser</a></div>
+            <div id="linje3"></div>
+            <div id="burger-text">
+                <h3>Om os:</h3>
+            <a href="#">Ansvarlighed</a>
+            <a href="#">Download app</a>
+            <a href="#">Job Nippon</a>
+            <a href="#">FAQ</a>
+            <a href="#">Fortrydelsesret</a></div>
+
+            <!-- Almindelige links -->
+            <ul class="right-links">
+                
+                <a href="login.html"><i class="fa-solid fa-user"></i><li>Login</li></a>
+                <a href="error.html"><i class="fa-solid fa-cart-shopping" style="color: #001e57;"></i></a>
+                
+            </ul>
+            <!-- Top links -->
+            <ul class="top-links">
+                <a href="maaltidskasser.html">Måltidskasser</a>
+                <div class="vertical-line"></div>
+                <a href="madpakkekasser.html">Madkasser</a>
+            </ul>
+        </div>
+    </nav>
+    
+<!-- Countdown -->
+    <div class="alert-container">
+        <img src="img/leveringikon.png" alt="levering" width="100px" height="90px">
+        <div class="copy-container">
+            <h1 class="main-head">Gå ikke glip af op til 1.199kr i rabat!</h1>
+        </div>
+        <ul class="countdown-clock">
+            <li><span id="days"></span>D</li>
+            <li><span id="hours"></span>T</li>
+            <li><span id="minutes"></span>M</li>
+            <li><span id="seconds"></span>S</li>
+        </ul>
+        <div class="nav-button-container">
+            <a class="nav-button-wrap" href="error.html">
+                <div id="nav-button">Se Tilbud</div>
+            </a>
+        </div>
+    </div>
+                
+                
+    </header>
+
+    <body>
+        <main>
+            <!--Overordnet beskrivelse af kassen-->
+            <section id="infofire">
+                <div class="infoimgfire">
+                    <img src="img/nipponspeanutudon.png" alt="Billede af appen">
+                </div>
+                <section class="infotekstfire">
+                    <h1>NIPPONS PEANUT UDON</h1>
+                    <section class="ikontekstfire">
+                        <section class="ikonrakke">
+                            <section class="mtekst">
+                                <img src="img/svaerhedsgrad.png" alt="Sværhedsgrads ikon">
+                                <h4>Easy</h4>
+                            </section>
+                            <section class="mtekst">
+                                <img src="img/urikon.png" alt="Tidshorisonts ikon">
+                                <h4>20 min.</h4>
+                            </section>
+                            <section class="mtekst">
+                                <img src="img/nippontofuikon.png" alt="Tidshorisonts ikon">
+                                <h4>Vegansk</h4>
+                            </section>
+                        </section>
+                        <p>Nippons Peanut Udon er en lækker og smagsfuld japansk nudelret, der tilbyder en unik smagsoplevelse. Denne ret kombinerer tykke og silkebløde udon-nudler med en forfriskende jordnøddesauce, der giver den en rig, nøddeagtig smag med et strejf af sødme.</p>
+                        <p>Nippons Peanut Udon er en hjertelig og tilfredsstillende ret, der er perfekt til både vegetarer og dem, der ønsker at udforske den lækre verden af japansk mad. Den er fyldt med smag og tekstur og vil helt sikkert glæde dine smagsløg. Prøv det næste gang du ønsker at forkæle dig selv med en smagfuld og tilfredsstillende ret fra det fjerne øst.</p>
+                    </section>
+                </section>
+            </section>
+            <!--Ingrediens oversigt-->
+            <section class="infotre">
+                <section class="infoteksttre">
+                    <h1>INGREDIENSER</h1>
+                    <h2>4 portioner</h2>
+                    <section class="ikonteksttre">
+                        <p><strong>1 stor pose udon nudler</strong></p>
+                        <p><strong>1 pakke NIPPON Peanut Sauce</strong></p>
+                        <p><strong>2 gulerødder</strong> i tynde strimler</p>
+                        <p><strong>1,5 pakke hvidkål</strong> i små tern</p>
+                        <p><strong>1 stor rødløg</strong> hakket fint</p>
+                        <p><strong>1 forårsløg</strong> i tynde stykker</p>
+                        <p><strong>2 store hvidløg</strong> presset eller hakket fint</p>
+                        <p><strong>3 cm stykke ingefær</strong> hakket fint</p>
+                    </section>
+                </section>
+                <div class="infoimgtre">
+                    <img src="img/ingredienser.png" alt="Billede af appen">
+                </div>
+            </section>
+
+            <div class="linje1"></div>
+
+            <!--Fremgangsmåde-->
+            <section id="baggrund">
+                <div class="midt">
+                    <img class="fremgang" src="img/fremgangsmetode.png" alt="Fremgangsmetode overskrift">
+                </div>
+                <section id="metode">
+                        <div class="cirkel">1</div>
+                        <p>Bring en gryde i kog. Når vandet koget kom dashi (grøntsagsbouillon), sojasauce, mirin, sake og sukker i. Varm blandingen op og lad det simre og lav varme.</p>
+                </section>
+                <div class="midt">
+                    <hr class="prik">
+                </div>
+                <section id="metode">
+                        <div class="cirkel">2</div>
+                        <p>I en separat gryde kog nudlerne i henhold til pakkeinstruktionerne - omkring 2-3 minutter. Dræn nudlerne og skyl dem under koldt vand. Tilsæt sesamolie.</p>
+                </section>
+                <div class="midt">
+                    <hr class="prik">
+                </div>
+                <section id="metode">
+                    <div class="cirkel">3</div>
+                    <p>Steg skiver af svinekød og kylling. Kog øgene i varmt vand, og skær dem heraf i halve. Skær de øvrige toppings som forårsløg, spirer og tang i passende stykker.</p>
+                </section>
+                <div class="midt">
+                    <hr class="prik">
+                </div>
+                <section id="metode">
+                    <div class="cirkel">4</div>
+                    <p>Saml suppen: Kom nudlerne op i en skål. Hæld den varme bouillon over nudlerne, og tilføj dine valgte toppings, herunder kød, æg, forårsløg, spirer og tang.</p>
+                </section>
+                <div class="midt">
+                    <hr class="prik">
+                </div>
+                <section id="metode">
+                    <div class="cirkel">5</div>
+                    <p>Server din japanske Ramen nudelsuppe straks. Tilføj lidt sriracha-sauce eller chiliolie for ekstra smag og varme.</p>
+                </section>
+                <div class="midt">
+                    <hr class="prik">
+                </div>
+            </section>
+
+            <div class="linje1"></div>
+            <!--Tips til kræsne børn-->
+            <section class="billedgangeto">
+                    <img class="billeder1" src="img/billedtip.png" alt="Billede af appen">
+                    <img class="billeder" src="img/tips.png" alt="Billede af appen">
+            </section>
+           
+       
+
+    <footer>
+        <div class="linje1"></div>
+        <section class="baggrundsfarve">
+            <section class="footer-container">
+                <section class="folink">
+                    <h3>Om os:</h3>
+                    <a href="#">Ansvarlighed</a>
+                    <a href="#">Download app</a>
+                    <a href="#">Job Nippon</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Fortrydelsesret</a>
+                </section>
+                <section class="folink">
+                    <img id="foimg" src="img/logofooter.png" alt="Nippon logo">
+                </section>
+                <section class="folink">
+                    <h3>Kontakt:</h3>
+                    <a href="#">Kirkeallé 115</a>
+                    <a href="#">8000 Aarhus</a>
+                    <a href="#">CVR 33070890</a>
+                    <a href="#">+45 79791010</a>
+                    <a href="#">kontakt@nippon.dk</a>
+                </section>
+            </section>
+        
+            <section class="footer-info">
+                <div class="input-container">
+                    <input type="text" id="indsetmail" placeholder="Indtast mail her" value="">
+                </div>
+                <div class="billedrakke">
+                    <img src="img/mobilepay.png" alt="mobilepay">
+                    <img src="img/dk.png" alt="dk">
+                    <img src="img/visa.png" alt="visa">
+                    <img src="img/matercard.png" alt="mastercard">
+                </div>
+            </section>
+            </section>
+        
+          
+        <!--Øverste footer-->
+        <section id="fotop">
+            <section id="fotrust">
+                <img src="img/smiley.png" alt="fødevarestyrelsen">
+                <img src="img/ovrefooter.png" alt="trustpilot stjerner">
+                <img src="img/emaerket.png" alt="emærket logo">
+            </section>
+        </section>
+        
+        <section id="fobund">
+            <h2>Følg os og blev inspireret</h2>
+                <img src="img/instagram.png" alt="instagram logo">
+                <img src="img/pinterest.png" alt="pinterest logo">
+                <img src="img/facebook.png" alt="facebook logo">
+        </section>
+        </footer>
+
+ </main>
+    </body>
+    </html>

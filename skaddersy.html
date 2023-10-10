@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nippon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https: //fonts.googleapis.com/css2? family= Barlow+Semi+Condensed & display=swap" rel="stylesheet">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/e55ea91b63.js" crossorigin="anonymous"></script>
+    <header>
+        <div class="logo"><a href="index.html"><img alt="logo" src="img/logo.png" width="180px"></a></div>
+        <div class="ikonburger">
+    <i class="fa fa-bars" id="burger-menu"></i>
+    <i class="fa-solid fa-cart-shopping" style="color: #001e57;"></i>
+        </div>
+    <div class="linje"></div>
+    <nav>
+
+        <!-- burger -->
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <div class="burger-item"><a href="login.html"><i class="fa-solid fa-user"></i></a></div>
+            <div id="linje3"></div>
+            <div id="burger-text">
+            <a href="maaltidskasser.html">Måltidskasser</a>
+            <a href="madpakkekasser.html">Madpakkekasser</a></div>
+            <div id="linje3"></div>
+            <div id="burger-text">
+                <h3>Om os:</h3>
+            <a href="#">Ansvarlighed</a>
+            <a href="#">Download app</a>
+            <a href="#">Job Nippon</a>
+            <a href="#">FAQ</a>
+            <a href="#">Fortrydelsesret</a></div>
+
+            <!-- Almindelige links -->
+            <ul class="right-links">
+                
+                <a href="login.html"><i class="fa-solid fa-user"></i><li>Login</li></a>
+                <a href="error.html"><i class="fa-solid fa-cart-shopping" style="color: #001e57;"></i></a>
+                
+            </ul>
+            <!-- Top links -->
+            <ul class="top-links">
+                <a href="maaltidskasser.html">Måltidskasser</a>
+                <div class="vertical-line"></div>
+                <a href="madpakkekasser.html">Madkasser</a>
+            </ul>
+        </div>
+    </nav>
+    
+<!-- Countdown -->
+    <div class="alert-container">
+        <img src="img/leveringikon.png" alt="levering" width="100px" height="90px">
+        <div class="copy-container">
+            <h1 class="main-head">Gå ikke glip af op til 1.199kr i rabat!</h1>
+        </div>
+        <ul class="countdown-clock">
+            <li><span id="days"></span>D</li>
+            <li><span id="hours"></span>T</li>
+            <li><span id="minutes"></span>M</li>
+            <li><span id="seconds"></span>S</li>
+        </ul>
+        <div class="nav-button-container">
+            <a class="nav-button-wrap" href="error.html">
+                <div id="nav-button">Se Tilbud</div>
+            </a>
+        </div>
+    </div>
+                
+                
+    </header>
+
+    <div class="opskrifter-container">
+      <div class="left-column">
+        <div class="opskrifter-overskrifter">
+          <h1>TILPAS OG VÆLG DINE OPSKRIFTER</h1>
+          <p>Med 'Skræddersy' kan du selv vælge og tilføje de opskrifter du gerne vil have hver uge. <br>Du kan også tilpasse hvor mange personer de forskellige opskrifter skal være til.</p>
+        </div>
+      </div>
+      <div class="right-column">
+        <div class="sektionopskrifter">
+          <div class="liste-sektion">
+            <h2>SKRÆDDERSY DIN KASSE:</h2>
+            <div class="linje4"></div>
+            <ul id="valgteOpskrifter"></ul>
+            <img src="img/nippondumpling.png" alt="Billede af appen" width="40%">
+            <div class="linje4"></div>
+            <button class="knappen">Tilføj til kurv</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+   
+    
+          <div class="container">
+        <div class="sektion">
+          <section class="prmaal">
+            <img src="img/japansknudelsuppe.png" alt="ikon">
+            <h2>Japansk Nudelsuppe</h2>
+            <div class="laegikurv">
+              <label for="taldropdown"></label>
+              <select id="taldropdown1" name="tal">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <p>stk.</p>
+              <a class="tilfaej" onclick="tilføjOpskrift(1)">Tilføj</a>
+            </div>
+          </section>
+        </div>
+        <div class="sektion">
+            <section class="prmaal">
+              <img src="img/okonomiyaki.png" alt="ikon">
+              <h2>Okonomiyaki</h2>
+              <div class="laegikurv">
+                <label for="taldropdown1"></label>
+                <select id="taldropdown1" name="tal">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                <p>stk.</p>
+                <a class="tilfaej" onclick="tilføjOpskrift1(1)">Tilføj</a>
+              </div>
+         
+              </section> </div>
+
+          
+              
+
+          <div class="sektion">
+            <section class="prmaal">
+              <img src="img/kyllingekatsu.png" alt="ikon">
+              <h2>Kyllinge Katsu</h2>
+              <div class="laegikurv">
+                <label for="taldropdown"></label>
+                <select id="taldropdown1" name="tal">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                <p>stk.</p>
+                <a class="tilfaej" onclick="tilføjOpskrift(3)">Tilføj</a>
+              </div>
+            </section>
+          </div>
+
+          
+          <div class="sektion">
+            <section class="prmaal">
+              <img src="img/udon.png" alt="ikon">
+              <h2>Nippons PEANUT UDON</h2>
+              <div class="laegikurv">
+                <label for="taldropdown"></label>
+                <select id="taldropdown1" name="tal">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                <p>stk.</p>
+                <a class="tilfaej" onclick="tilføjOpskrift(4)">Tilføj</a>
+              </div>
+            </section>
+          </div>
+          <div class="sektion">
+            <section class="prmaal">
+              <img src="img/omurice.png" alt="ikon">
+              <h2>Omu Rice</h2>
+              <div class="laegikurv">
+                <label for="taldropdown"></label>
+                <select id="taldropdown1" name="tal">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                <p>stk.</p>
+                <a class="tilfaej" onclick="tilføjOpskrift(5)">Tilføj</a>
+              </div>
+            </section>
+            </div>
+           
+
+          
+          <div class="sektion">
+            <section class="prmaal">
+              <img src="img/teppanyaki.png" alt="ikon">
+              <h2>Teppanyaki</h2>
+              <div class="laegikurv">
+                <label for="taldropdown"></label>
+                <select id="taldropdown1" name="tal">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                <p>stk.</p>
+                <a class="tilfaej" onclick="tilføjOpskrift(6)">Tilføj</a>
+              </div>
+            </section>
+          </div>
+    </div>
+    <section id="plads"></section>
+              
+              
+                <footer>
+                  <div class="linje1"></div>
+                  <section class="baggrundsfarve">
+                      <section class="footer-container">
+                          <section class="folink">
+                              <h3>Om os:</h3>
+                              <a href="#">Ansvarlighed</a>
+                              <a href="#">Download app</a>
+                              <a href="#">Job Nippon</a>
+                              <a href="#">FAQ</a>
+                              <a href="#">Fortrydelsesret</a>
+                          </section>
+                          <section class="folink">
+                              <img id="foimg" src="img/logofooter.png" alt="Nippon logo">
+                          </section>
+                          <section class="folink">
+                              <h3>Kontakt:</h3>
+                              <a href="#">Kirkeallé 115</a>
+                              <a href="#">8000 Aarhus</a>
+                              <a href="#">CVR 33070890</a>
+                              <a href="#">+45 79791010</a>
+                              <a href="#">kontakt@nippon.dk</a>
+                          </section>
+                      </section>
+                  
+                      <section class="footer-info">
+                          <div class="input-container">
+                              <input type="text" id="indsetmail" placeholder="Indtast mail her" value="">
+                          </div>
+                          <div class="billedrakke">
+                              <img src="img/mobilepay.png" alt="mobilepay">
+                              <img src="img/dk.png" alt="dk">
+                              <img src="img/visa.png" alt="visa">
+                              <img src="img/matercard.png" alt="mastercard">
+                          </div>
+                      </section>
+                      </section>
+                  
+                    
+                  <!--Øverste footer-->
+                  <section id="fotop">
+                      <section id="fotrust">
+                          <img src="img/smiley.png" alt="fødevarestyrelsen">
+                          <img src="img/ovrefooter.png" alt="trustpilot stjerner">
+                          <img src="img/emaerket.png" alt="emærket logo">
+                      </section>
+                  </section>
+                  
+                  <section id="fobund">
+                      <h2>Følg os og blev inspireret</h2>
+                          <img src="img/instagram.png" alt="instagram logo">
+                          <img src="img/pinterest.png" alt="pinterest logo">
+                          <img src="img/facebook.png" alt="facebook logo">
+                  </section>
+                  </footer>
+                  </body>
+                  </html>
+
+      </body>
+      
+      </html>

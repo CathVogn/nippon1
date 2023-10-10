@@ -1,0 +1,1905 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.large-checkbox {
+  transform: scale(2); 
+  margin-top: 10px;/* Ændrer størrelsen ved at skalaen op med faktor 2 (kan tilpasses) */
+}
+
+/* headeren */
+header {
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #f8f5e5;
+}
+
+body{
+   background-color: #f8f5e5;
+   font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.linje{
+    border-bottom: 2px solid #1c2666;
+    display: block;
+    width: 100%;
+}
+
+/* Stil navigationen */
+nav ul {
+    display: inline-block;
+    list-style: none;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+   
+}
+
+.top-links a{
+align-items: center;
+}
+
+/* Centrer teksten lodret i top-links */
+nav ul.top-links {
+  display: flex;
+  font-size: 25px;
+  margin: 20px 39%;
+  align-items: center;
+}
+
+nav ul.top-links li {
+  display: inline;
+}
+
+nav ul.right-links {
+    display: inline;
+    float: right; 
+    margin: 0 40px;
+    font-size: 20px;
+    margin-right: 2%;
+}
+
+nav ul.right-links li {
+    display: inline;
+    margin-left: 10px; 
+}
+a{
+    text-decoration: none;
+    color: #1c2666;
+}
+
+.vertical-line {
+    height: 1em; 
+    width: 2px; 
+    background-color: #1c2666; 
+    margin: 0 10px; 
+}
+
+nav .fa{
+  display: none;
+}
+
+.right-links1{
+  display: none;
+}
+
+.fa-solid .fa-user{
+  color: #1c2666;
+}
+
+.ikonburger i{
+  display:none;
+}
+
+#burger-text{
+  margin: 10px 12px;
+  color: white;
+  display: none;
+  font-size: 20px;
+}
+
+#burger-text a {
+  text-decoration: none; 
+  color: white; 
+  display: block; 
+  margin: 10px 0; 
+  font-size: 20px;
+}
+
+#linje3{
+  margin: 60px 5px;
+  color: white;
+  display: none;
+  border-top: 1px solid #fff;
+  justify-content: center;
+}
+
+#nav-links {
+  display: block;
+}
+
+.burger-item {
+  display: none;
+}
+
+/*Countdown */
+.alert-container{
+	color: #fff;
+  padding-top: 20px;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	width: 100%;
+  background-color: #1c2666;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+/* Afstand mellem elementerne */
+.alert-container img,
+.alert-container .copy-container,
+.alert-container .countdown-clock,
+.alert-container .nav-button-container {
+    margin: 10px 30px;
+}
+
+
+.copy-container .blk-font{
+	color: #000;
+	margin: 0;
+}
+
+.copy-container {
+	display: inline-block;
+	position: relative;
+    background-color: #1c2666;
+    margin: 15px;
+}
+
+
+
+.main-head {
+	margin: 0;
+	font-size: 20px;
+  background-color: #1c2666;
+  font-family: 'Oswald', sans-serif;
+    font-weight:normal;
+    text-transform: uppercase;
+    
+}
+.countdown-clock li{
+	display: inline-block;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	text-transform: uppercase;
+	margin: 0 15px;
+	text-align: center;
+    background-color: #1c2666;
+}
+.countdown-clock{
+	display: inline-block;
+	padding: 0px 20px;
+	color: rgb(255, 255, 255);
+}
+
+.countdown-clock li span{
+	display: block;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 2px;
+    background-color: #f8f5e5;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid rgb(238, 5, 5);
+}
+
+a #nav-button{
+	padding: 10px 30px; 
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .5px;
+	font-family: 'Barlow Semi Condensed', sans-serif; 
+	background: #1c2666;
+	border-radius: 15px;
+	font-size: 20px;
+	position: relative;
+	bottom: 10px;
+  border: 2px solid rgb(238, 5, 5);
+}
+
+.nav-button-wrap {
+	text-decoration: none;
+}
+
+.countdown-clock li:nth-child(1) {
+	margin-left: 10px;
+    
+}
+
+.nav-button-container{
+	display: inline-block;
+}
+
+
+/* Slideshow */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* billedet usynligt */
+.Containers {
+  display: flex;
+  overflow: hidden;
+}
+.image-button{
+  position: absolute;
+  top: 70%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  background-color: #1c2666;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  border: 2px solid rgb(238, 5, 5); 
+  font-size: 20px;
+}
+
+.image-button2{
+  position: absolute;
+  top: 75%; 
+  left: 75%; 
+  transform: translate(-50%, -50%); 
+  background-color: #1c2666;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  border: 2px solid rgb(238, 5, 5); 
+  font-size: 20px;
+}
+
+.image-button3{
+    position: absolute;
+    top: 60%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: #1c2666;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    border: 2px solid rgb(238, 5, 5); 
+    font-size: 20px;
+  }
+
+/* frem og tilbage knapper */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: #1c2666;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Højre fremad knap placering */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+
+
+/* prikker i bund */
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color: #1c2666;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+
+
+/* Bevægelse */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+/* ikoner på stribe */
+.ikoner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-top: 5%;
+    margin-left: 4%;
+}
+
+.ikoner-billeder {
+    text-align: center;
+}
+
+.ikoner-billeder img {
+    max-width: 100%;
+    height: auto;
+    width: 50%;
+}
+
+
+.ikoner-text{
+    padding-left: 40px;
+    margin: 5px 60px;
+    display: flex;
+    padding-bottom: 200px;
+}
+
+.ikoner-text h3{
+    
+    color: #1c2666;
+    display: inline;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 30px;
+    margin: 0 6%;
+}
+
+/* Hvad Nippon tilbyder */
+
+.lærnippon-omkreds{
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(232, 230, 209, 0.552);
+    margin: 5%;
+    border-radius: 10px;
+    grid-row: span 4;
+    display: flex;
+}
+
+
+.lærnipponcontainer{
+    color: #1c2666;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr; 
+    margin: 0 auto;
+}
+
+.lærnipponbillede {
+    grid-row: span 4; 
+}
+
+.lærnipponbillede img{
+padding-top: 30px;
+padding-left: 125px;
+}
+
+.lærnippon-sectioner{
+  
+    margin: 5% 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
+}
+
+.lærnippon-section {
+    display: inline;
+    margin-bottom: 20px; 
+}
+
+.lærnippon-section h2{
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+    font-size: 20px; 
+    font-weight:bold;
+    text-transform: uppercase;
+}
+
+.lærnippon-omkreds .lærnipponcontainer h1{
+    font-size: 30px; 
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight:bold;
+   
+}
+
+.lærnippon-omkreds .lærnipponcontainer p{
+  font-size: 20px;
+  margin: 30px 15px;
+}
+
+
+
+
+/*Måltidskasse site*/
+#overskriftmaal{
+  width: 100%;
+  padding-top: 100px;
+}
+.rakkeaffire{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4%;
+}
+.prmaal{
+  justify-content: center;
+  text-align: center;
+}
+.prmaal h1{
+  align-items: center;
+  color:rgba(28, 38, 102, 1);
+}
+
+/*hvad er i kassen*/
+.infotre{
+  background-color: #efedde;
+}
+
+.infotre img{
+  width: 60%;
+  height: 600px;
+}
+.infoteksttre{
+  width: 70%;
+  padding-bottom: 100px;
+}
+.infotre h1{
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+  color:rgba(28, 38, 102, 1);
+  
+}
+
+.infotre .ikonteksttre li{
+  font-size: 20px;
+  align-items: center;
+  font-weight: lighter;
+}
+
+
+.bestilkasse {
+  font-size: 20px;
+  background-color: #1c2666;
+  color: #fff;
+  padding: 15px 70px; 
+  border: none; 
+  border-radius: 10px; 
+  cursor: pointer; 
+}
+
+.bestilkasse:hover {
+  background-color: #0056b3; 
+}
+
+/*Trust pilot section */
+#trust{
+  background-color: rgba(241, 237, 218, 1);
+  display: flex;
+  padding: 3%;
+  justify-content: space-between;
+  
+}
+#trustimg{
+  
+  display: inline-block;
+  width: 80%;
+  text-align: left;
+}
+#trustimg h2{
+  font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight:lighter;
+  text-align: center;
+  padding-left: 3%;
+}
+.trusttekst{
+  text-align: center;
+  margin: 0 4%;
+}
+.trusttekst h3{
+  font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight:bold;
+  color: black;
+  font-size: 15px;
+  padding-top: 3%;
+}
+.trusttekst h4{
+  font-size: 15px;
+  text-align: center;
+  font-weight:normal;
+}
+
+/*nye opskrifter i denne uge*/
+#galleriover{
+  font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight:normal;
+  text-align: center;
+  font-size: 50px;
+  color: #f01010;
+  padding-top: 200px;
+}
+#billed{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+#venstrePil{
+  padding-right: 3%;
+}
+#billed1, #billed2, #billed3, #billed4{
+  margin: 5%;
+}
+#hoejrePil{
+  padding-left: 3%;
+}
+
+/*info app*/
+#info{
+  color: #1c2666;
+  display:flex;
+  padding-top: 10%;
+  align-items: center;
+  padding-bottom: 10%;
+  
+}
+
+#info img{
+  padding-left: 100px;
+}
+
+
+.linje5 {
+  border-top: 1px solid #1c2666;
+  width:500px;
+  margin-left: 100px;
+}
+
+
+.infoimga{
+  border-radius: 100px;
+}
+
+.infotekst h1{
+  font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight:lighter;
+  color: #1c2666;
+  font-size: 30px;
+  text-align: center;
+  margin: 20px 20px;
+}
+
+.infotekst img {
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.icon-container img{
+  align-items: center;
+}
+
+.icon-container h2{
+  font-family: 'Oswald', sans-serif;
+  padding-left: 55px;
+  font-size: 25px;
+  font-weight:bold;
+}
+
+.icon-container {
+  padding-left: 30px;
+}
+
+
+/*Footeren blå sektion*/
+#fotrust {
+  background-color: rgba(28, 38, 102, 1);
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+#fotrust img {
+  margin: 30px 150px;; 
+  align-items: center;
+}
+
+.linje1 {
+  border-top: 10px solid #1c2666; 
+}
+#foimg{ 
+  padding-top: 10%;
+}
+
+/*Footeren */
+.footer-container {
+  padding-left: 20px;
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+
+}
+
+.folink {
+  justify-content: center;
+  margin: 40px 20px; }
+
+.folink h3{
+  font-size: 30px;
+  color: #1c2666;
+}
+.folink a{
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  color: black;
+}
+
+.footer-info {
+  padding-bottom: 75px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+}
+
+.input-container {
+  width: 30%;
+  display: flex; 
+  align-items: center; 
+}
+
+#fobund{
+  padding-left: 20px;
+  display: flex; 
+  align-items: center; 
+}
+
+#fobund img{
+  width: 20px;
+  height: 20px;
+}
+
+.baggrundsfarve{
+  background-color: #e8e4cb;
+}
+
+#mad{
+  border-radius: 30px;
+}
+
+
+/*måltidskasser*/
+#infoto{
+  display:flex;
+  background-color: rgba(241, 237, 218, 1);
+  padding-top: 6%;
+  padding: 1%;
+  align-items: center;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 50px;
+}
+
+#plads{
+  padding: 100px;
+}
+
+.infoimgto{
+  width: 30%;
+  padding: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.infotekstto{
+  text-align: center;
+  padding: 2%;
+  line-height: 50px;
+  width: 70%;
+}
+.infotekstto h1{
+  color: #bd1515;
+  padding-top: 5%;
+  font-size: 50px;
+}
+.infotekstto p{
+  padding-top: 2%;
+  font-size:x-large;
+}
+.ikontekstto{
+  align-items: center;
+  padding:2%;
+  margin-top: 2%;
+}
+.videre{
+  background-color:rgba(28, 38, 102, 1);
+  color: white;
+  font-size:large;
+  border-radius: 30px;
+  margin-top: 7%;
+  padding: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-bottom: 3%;
+  width:30%;
+}
+
+/*Madpakkekasser*/
+#infofire{
+  display:flex;
+  padding-top: 6%;
+  padding: 1%;
+  align-items: center;
+  background-color: rgba(241, 237, 218, 1);
+}
+.infoimgfire img{
+
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.infotekstfire{
+  text-align: center;
+  padding: 2%;
+  line-height: 30px;
+  width: 70%;
+}
+.infotekstfire h1{
+  color: #ab1010;
+  padding-top: 2%;
+  font-size: 50px;
+  line-height: 50px;
+}
+.infotekstfire h3{
+  padding-top: 10%;
+  font-size: 30px;
+  color: #1c2666;
+}
+.ikontekstfire{
+  align-items: center;
+  padding-bottom:2%;
+  margin-top: 2%;
+  text-align: left;
+  padding-left: 5%;
+  font-size: large;
+}
+.ikontekstfire p{
+  padding-top: 5%;
+}
+.priskurv{
+  display: flex; 
+  align-items: center;
+}
+
+.midt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.knapp-container {
+  padding-top: 15px;
+  margin: 0 100px;
+  display: flex; 
+  align-items: center; 
+}
+
+.min-knapp {
+  font-size: 25px;
+  background-color: #1c2666; 
+  color: #fff; 
+  padding: 10px 40px; 
+  border: none; 
+  border-radius: 10px; 
+  cursor: pointer; 
+}
+
+
+.min-knapp:hover {
+  background-color: #0056b3; 
+}
+
+
+/*Række af tre til madpakkekassesiden*/
+.rakkeaftre{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  padding-bottom: 200px;
+}
+.laegikurv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#taldropdown1{
+  padding: 5px;
+  margin-right: 5%;
+  border-radius: 10px;
+  border:solid 2px #f01010;
+  
+}
+
+.kurv{
+  background-color:rgba(28, 38, 102, 1);
+  color: white;
+  font-size:large;
+  border-radius: 30px;
+  width:30%;
+  margin-left: 20%;
+  padding: 2%;
+}
+
+
+/*stickers*/
+.rakkeaftreto{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10%;
+  margin-right:10%;
+  margin-bottom: 5%;
+}
+.prmaalto{
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  width: 322px;
+  height: 402px;
+  border-radius: 100px;
+}
+.prmaalto img{
+  
+  padding: 8%;
+}
+.haejdemangel{
+  margin-bottom:7%;
+  margin-top: 7%;
+}
+
+.midt{
+  color: #1c2666;
+  font-family: 'Oswald', sans-serif;
+    font-weight:lighter;
+    text-transform: uppercase;
+  font-size: 50px;
+padding-bottom: 100px;}
+
+.new-content {
+  display: none;
+  text-align: center;
+  padding-left: 70px;
+  padding-bottom: 100px;
+}
+
+.new-content h1{
+  color: #1c2666;
+font-size: 40px;
+padding-bottom: 40px;
+}
+
+
+/*Fremgangsmetode under opskrift*/
+#baggrund{
+  background-color: rgba(241, 237, 218, 1);
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.fremgang{
+  padding: 5%;
+}
+#metode{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+#metode p{
+  padding-left: 5%;
+  width: 50%;
+  font-size: large;
+}
+.cirkel{
+  width: 100px; 
+  height: 100px;
+  background-color: rgba(28, 38, 102, 1); 
+  color: #fff; 
+  border-radius: 50%; 
+  text-align: center; 
+  line-height: 100px; 
+  font-size: 24px; 
+  position: relative; 
+}
+.cirkel::before{
+  content: ""; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: inherit; 
+  border-radius: inherit; 
+  transform: scale(0.8); 
+  z-index: -1; 
+}
+.prik{
+  border: none;
+  border-top: 2px dotted #000; 
+  width: 65%; 
+  margin: 5%;
+}
+
+/*Sektion m. to billeder*/
+.billedgangeto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.billeder{
+  width: 40%;
+  padding: 2%;
+}
+
+/* opret */
+.baggrundsbillede {
+  background-image: url('img/baggrund\ login.png'); 
+  min-height: 120vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#opret{
+  color: #1c2666;
+  padding-bottom: 10px;
+}
+
+.containeropret{
+  width: 500px;
+  text-align: center;
+  padding-top: 100px;
+  display: flex;
+}
+
+/* Style for inputfelter */
+    input[type="text"], input[type="email"], input[type="password"], input[type="number"]{
+        width: 100%; 
+        padding: 10px; 
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        padding-top: 10px;
+        margin-bottom: 30px;
+        border:solid 1px rgba(28, 38, 102, 1) ;
+  border-radius: 30px;
+
+    }
+
+    .containerfarve{
+      background-color: #39448220;
+      padding: 50px;
+      border-radius: 20px;
+      opacity: inherit;
+      border:solid 1px rgba(28, 38, 102, 1) ;
+      border-radius: 30px;
+      }
+      
+
+
+/* login */
+.baggrundsbilledelogin {
+  background-image: url('img/baggrund\ login.png'); 
+  min-height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-button {
+  background-color: #1c2666;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button-container {
+  margin-top: 20px; 
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.create-account-button-login{
+  color: #0074D9;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.containerlogin {
+  width: 300px;
+  text-align: center;
+}
+
+/* error */
+.baggrundsbilledeerror {
+  background-image: linear-gradient(rgba(253, 246, 192, 0.348), rgba(70, 11, 11, 0.245)), url(img/error.png); 
+  min-height: 200vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ 
+  
+
+    /* Style for labels */
+    label {
+      padding-top: 10px;
+      margin: 0 10px;
+        float: left;
+        font-size: 14px; 
+        display: block; 
+
+    }
+
+   
+
+    .containerfarve{
+      background-color: #39448220;
+      padding: 50px;
+      border-radius: 20px;
+      opacity: inherit;
+      border:solid 1px rgba(28, 38, 102, 1) ;
+      border-radius: 30px;
+      }
+      
+      /* Bekræftelse */
+      .containerbekraftelse{
+        width: 800px;
+        text-align: center;
+      }
+
+      .baggrundsbilledebekraftelse{
+        background-image: url('img/baggrund\ login.png'); 
+        min-height: 80vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        
+        }
+
+
+        #bekraft{ position: relative;
+          display: inline-block;}
+
+        .containerfarvebekraftelse{
+          background-color: #3944826d;
+          padding: 50px;
+          border-radius: 20px;
+          opacity: inherit;
+          border:solid 1px rgba(28, 38, 102, 1) ;
+          border-radius: 30px;
+
+          }
+
+
+          .containerfarvebekraftelse h1{
+            color: #ab1010;
+          }
+        
+
+          /* til forside knap */
+        .tilforside {
+            font-family: 'Oswald', sans-serif;
+            position: absolute;
+            top: 62%; /* Juster lodret position efter behov */
+            left: 44%; /* Juster vandret position efter behov */
+            background-color:rgba(28, 38, 102, 1);
+            width: 150px; /* Juster bredden efter behov */
+            height: 50px; /* Juster højden efter behov */
+            color: #fff; /* Ændr tekstfarven efter behov */
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+            padding-top: 12px;
+            text-align: center;
+        }
+
+label{
+  font-size: 15px;
+  color: #1c2666;
+  font-weight: bold;
+}
+
+.form-container {
+ margin-bottom: 20px;
+  display: flex; 
+  justify-content: space-between; 
+}
+
+/* Style for inputfelter */
+.form-container input[type="text"]{
+  flex: 1; 
+ margin: 0 12px;
+}
+
+.form-container input[type="number"]{
+flex: 0.5;
+ margin: 0 20px;
+
+}
+
+.form-container label[type="adgangskode"]{
+  font-size: 10px;
+}
+
+.linje2 {
+  border-top: 1px solid #1c2666; 
+  padding-bottom: 20px;
+}
+
+
+
+
+
+/*Info om indhold i kasserne*/
+.infotre{
+  display:flex;
+  padding: 1%;
+  align-items: center;
+}
+.infoimgtre{
+  width: 100%;
+  padding: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.infoteksttre{
+  text-align: center;
+  padding: 2%;
+  line-height: 50px;
+  width: 70%;
+}
+.infoteksttre h1{
+  padding-top: 5%;
+  font-size: 50px;
+  color:rgba(28, 38, 102, 1);
+}
+.infoteksttre p{
+  padding-top: 2%;
+  font-size:x-large;
+}
+.ikonteksttre{
+  align-items: center;
+  padding:2%;
+  margin-top: 2%;
+  text-align: left;
+  padding-left: 10%;
+  font-size: large;
+}
+
+
+
+/*Række med ikoner under opskriftbeskrivelsen*/
+.ikonrakke{
+  display:flex;
+  padding-top:4%;
+  justify-content: center;
+}
+.mtekst{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  text-align: center; 
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.mtekst h4{
+  padding-top: 10%;
+}
+
+
+
+/*Billedgalleri med produkter*/
+#billed{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+
+
+/*Skræddersyet site*/
+#opskrifterne{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#indhold{
+  text-align: center;
+  align-items: center;
+  width:100%;
+}
+.sektion .prmaal h2{
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #1c2666;
+  font-family: 'Oswald', sans-serif;
+    font-weight:normal;
+    text-transform: uppercase;
+}
+
+
+.tilfaej{
+  background-color:rgba(28, 38, 102, 1);
+  color: white;
+  font-size:medium;
+  border-radius: 30px;
+  width:30%;
+  margin-left: 20%;
+  padding: 2%;
+}
+#kurvberegner{
+  text-align: center;
+  width:30%;
+  background-color: rgba(241, 237, 218, 1);
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#prisoversigt{
+  display: flex;
+  justify-content: center;
+}
+
+.liste-container {
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+}
+
+#min-liste {
+  list-style-type: circle;
+  color: #333;
+  font-family: Arial, sans-serif;
+  padding-left: 20px; 
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 40px; 
+  width: 80%;
+  margin: 0 auto; 
+  padding: 20px;
+}
+
+.sektion {
+  flex: 1; 
+  margin-right: 20px;
+}
+
+.sektion img{
+  border-radius: 10px;
+}
+
+
+.linje4{
+  padding-left: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #1c2666;
+    display: block;
+    width: 80%;
+    margin: 5%;
+}
+.knappen {
+  background-color:rgba(28, 38, 102, 1);
+  color: white;
+  border-radius: 30px;
+  border: none;
+  width:30%;
+  padding: 2%;
+}
+
+
+
+.opskrifter-overskrifter h1{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  color: #f01010;
+  padding-top: 100px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.opskrifter-overskrifter p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1c2666;
+  padding: 20px 30px;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.opskrifter-container {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  
+  .sektionopskrifter{
+    background-color: #F1EDDA;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 20%;
+    margin-left: 40%;
+
+  }
+
+.left-column {
+  flex: 1;
+}
+
+.right-column {
+  flex: 1;
+  padding-top: 50px;
+}
+
+.liste-sektion h2{
+  color: #1c2666;
+  font-weight: normal;
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+#valgteOpskrifter{
+color: #ab1010;
+font-size: 20px;
+padding: 20px;
+}
+
+/*Vegansk kasse side*/
+#veganskpris{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#veganskpris h3{
+  color:rgba(28, 38, 102, 1);
+  text-transform: uppercase;
+  padding-bottom: 10%;
+  font-size: x-large;
+}
+.rakkeaftrevega{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-top: 100px;
+}
+
+.prmaal img{
+  border-radius: 20px;
+}
+
+
+@media (max-width: 700px){
+
+  .Containers img{
+    display: block;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 50%;
+    z-index: -1;
+  }
+
+  .prmaalto {
+    display: none;
+  }
+  
+  /* Vis den nye sektion */
+  .new-content {
+    display: block;
+  }
+
+  
+  }
+  
+  /*---Tablet---*/
+  @media(max-width:1100px){
+  
+  .nav-links ul li{
+    display: block;
+  }
+  
+  nav ul{
+    display: none;
+  }
+  
+
+  .right-links .fa-solid .fa-user{
+   color: white; 
+  }
+  
+  .ikonburger i{
+    display: block;
+  }
+    .nav-links ul li{
+      display: none;
+  }
+  
+  .nav-links ul li{
+    display: block;
+  }
+  
+  nav ul{
+    display: none;
+  }
+  
+  .right-links .fa-solid i{
+    color: white;
+  }
+  .right-links .fa-cart-shopping{
+    display: none;
+  }
+  
+  .top-links a{
+    display: none;
+  }
+  
+  .vertical-line {
+    display: none; 
+  }
+  
+  .burger-item {
+
+    display: block;
+    align-items: center;
+}
+
+/* Stil for ikoner */
+.burger-item i {
+    margin-right: 50px; 
+    font-size: 30px; 
+    color: white;
+}
+  
+  .nav-links{
+      position: absolute;
+      background: #1c2666;
+      height: 100vh;
+      width:200px;
+      top:0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+  }
+
+ 
+  
+  /* Hvidt kryds */
+  nav .fa{
+      display: block;
+      color: white;
+      font-size: 40px;
+      cursor:pointer;
+      margin: 5%;
+  }
+  
+  .nav-links ul{
+      padding: 30px;
+  }
+  
+    /* Burgermenu ikon */
+    .fa-bars {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      cursor: pointer;
+      z-index: 2;
+      font-size: 30px;
+    }
+  /* indkøbsvogn ikon */
+    .fa-solid{
+      position: absolute;
+      top: 17px;
+      right: 60px;
+      cursor: pointer;
+      z-index: 2;
+      font-size: 28px;
+    }
+  
+    /* Countdown */
+  .alert-container img,
+  .alert-container .copy-container,
+  .alert-container .countdown-clock,
+  .alert-container .nav-button-container{
+     display: none;
+    }
+  
+    .image-button,.image-button2,.image-button3{
+      display: none;
+    }
+    /* ikoner */
+    .ikoner-text h3{
+      display: none;
+    }
+
+    /* lærnippon */
+  
+    .lærnippon-section h2{
+      font-size: 20px;
+      padding-top: 30px;
+      text-align: center;
+    }
+
+    .lærnippon-section p{
+      padding-top: 10px;
+    }
+
+    .lærnipponcontainer {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .lærnippon-sectioner{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  #nippon-bilde {
+    content: url('img/logofooter.png'); 
+}
+
+.lærnipponbillede img{
+  padding: 10% 23%;
+}
+
+.lærnippon-omkreds .lærnipponcontainer h1{
+  font-size: 25px;
+}
+
+/*Måltidskasse site*/
+
+.rakkeaffire{
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.prmaal{
+  padding-top: 20%;
+}
+
+
+.infotre{
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
+}
+
+.infotre img{
+  width: 100%;
+  height: 500px;
+}
+.infoteksttre h1{
+  font-size: 20px;
+}
+
+.infotre .ikonteksttre li{
+  font-size: 20px;
+  align-items: center;
+  font-weight: lighter;
+  
+}
+
+.bestilkasse {
+  font-size: 15px; 
+}
+
+
+/*Trust pilot section*/
+#trust{
+  display: none;
+}
+
+/*app*/
+#info{
+  display: none;
+}
+
+/*Footeren blå sektion*/
+
+#fotrust img {
+  width: 20%;
+  margin: 10px 30px; 
+}
+
+#fotop{
+  padding-top: 50px;
+}
+
+/*Footeren */
+.footer-container {
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+/*måltidskasser */
+#infoto{
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.infotekstto h1{
+  padding-top: 10%;
+  font-size: 30px;
+  text-align: center;
+}
+.infotekstto p{
+  padding-top: 2%;
+  font-size:x-large;
+}
+.ikontekstto{
+  align-items: center;
+  padding:2%;
+  margin-top: 2%;
+}
+
+
+/*Madpakkekasser*/
+#infofire{
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.infoimgfire img{
+  width: 500px;
+}
+
+.infotekstfire h1{
+  padding-top: 15%;
+}
+
+.midt img{
+  padding-top: 100px;
+  width: 110%;
+}
+
+
+.rakkeaftre{
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.knapp-container {
+  padding-left: 20px;
+  padding-top: 15px;
+  margin: 30px 10px;
+}
+
+.min-knapp {
+  font-size: 20px;
+  padding: 15px 30px;
+}
+
+.pris-tekst h3{
+  font-size: 20px;
+}
+
+.infotekstfire h1{
+font-size: 40px;
+padding-bottom: 20px;
+}
+
+
+.infotre .infoteksttre h1{
+  font-size: 40px;
+}
+
+.infotre .infoteksttre .ikonteksttre p{
+  font-size: 20px;
+}
+
+.billeder1{
+  display: none;
+}
+
+.billeder{
+  padding-top: 100px;
+  width: 90%;
+}
+
+
+.login-button{
+  padding-top: 30px;
+}
+
+.containeropret{
+  width: 100%;
+  padding-top: 100px;
+  margin-left: 0;
+}
+
+.top-links {
+  display: none;
+}
+
+/* Vis burgermenuen  */
+#nav-links {
+  display: block;
+}
+
+/* tekst burgermenuen */
+#burger-text {
+  display: block;
+}
+
+#linje3{
+  display: block;
+  color: white;
+}
+
+.container{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.sektion {
+  min-width: 100%; 
+  margin-right: 0; 
+}
+
+.opskrifter-container{
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sektionopskrifter{
+  width: 100%;
+  margin-left: 0;
+}
+
+.tilforside {
+  display: none;
+}
+
+.rakkeaftrevega{
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/*nye opskrifter i denne uge*/
+#galleriover{
+  font-size: 30px;
+}
+
+#venstrePil{
+  height: 50px;
+}
+#billed1, #billed2, #billed3, #billed4{
+  margin: 5%;
+}
+#hoejrePil{
+  padding-left: 3%;
+  height: 50px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
