@@ -151,6 +151,28 @@ function forrigeBillede(){
 }
 
 
+//Error side skriftende tekst
+// Funktion til at ændre overskriften automatisk ved indlæsning
+function skiftOverskriftAutomatisk() {
+    // Hent den gemte overskrift fra localStorage, eller brug en standardoverskrift
+    let gemtOverskrift = localStorage.getItem('gemtOverskrift');
+    if (!gemtOverskrift) {
+        gemtOverskrift = "overskrift1"; // Standardoverskrift
+    }
+
+    // Tilfældigt valg af en ny overskrift (undgå gentagelser)
+    let overskrifter = ["Nippon har brændt maden på...", "Nippon arbejder hårdt i køkkenet i dag...", "Nippon tabte en dumpling på gulvet..."];
+    overskrifter = overskrifter.filter(overskrift => overskrift !== gemtOverskrift); // Fjern den gemte overskrift
+    const tilfældigIndex = Math.floor(Math.random() * overskrifter.length);
+    const nyOverskrift = overskrifter[tilfældigIndex];
+
+    // Opdater den aktive overskrift og gem den valgte overskrift i localStorage
+    const aktivOverskrift = document.getElementById('overskrift1');
+    aktivOverskrift.innerText = nyOverskrift;
+    localStorage.setItem('gemtOverskrift', nyOverskrift);
+}
+
+
 
   
   
